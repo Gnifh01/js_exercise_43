@@ -12,7 +12,7 @@ class BankAccount {
       }
       this.#amount += amount;
     } catch (err) {
-      console.log(err.message);
+      console.log(`Error Name: ${err.name} \nError Message: ${err.message}`);
     }
   }
 
@@ -27,7 +27,7 @@ class BankAccount {
 
       this.#amount -= amount;
     } catch (err) {
-      console.log(err.message);
+      console.log(`Error Name: ${err.name} \nError Message: ${err.message}`);
     }
   }
 
